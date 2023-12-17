@@ -43,8 +43,6 @@ if __name__ == '__main__':
                                                    model="gpt-3.5-turbo",
                                                    callbacks=[StreamingStdOutCallbackHandler()],
                                                    temperature=0)
-    if "lama" not in st.session_state:
-        st.session_state.lama = None
 
     # conversation
     if "conversation" not in st.session_state:
